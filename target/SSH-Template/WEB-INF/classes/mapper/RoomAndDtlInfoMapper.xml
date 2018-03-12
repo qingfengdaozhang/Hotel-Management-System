@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spawpaw.ssm.dao.RoomAndDtlInfoMapper">
+    <select id="selectRoomAndDtlById" parameterType="int" resultType="com.spawpaw.ssm.entity.RoomAndDtl">
+        select *
+from subscription_dtl dtl
+join room r
+	on dtl.rid=r.id
+join category c
+	on r.cid=c.id
+where sid=#{id}
+    </select>
+</mapper>

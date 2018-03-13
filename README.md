@@ -1,6 +1,6 @@
 
 # HotelManagement
-
+# 基于SSM的酒店管理系统
 ## 项目目的
 ### 1.完成Web课程设计
 ### 2.自学ssm程度检测
